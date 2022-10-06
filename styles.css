@@ -1,26 +1,74 @@
-'use strict'
-
-function quiz() {
-const quiz1 = document.getElementById('quiz');
-  if (quiz1.answer.value === 'a') {
-   } else if (quiz1.answer.value === 'b') {
-    score++;
-   } else if (quiz1.answer.value === 'c') {
-   } else {
-  }
+body { 
+  background-color: rgb(248, 245, 251);  
 }
 
-let score = 0;
-function lastScore(){
-  const totalScore = document.getElementById('score-message');
-  if(score === 1) {
-    totalScore.innerHTML = "正解です。ありがとうございます。";
-  } else {
-    totalScore.innerHTML = "残念...柳田に聞いてみましょう。";
-  }   
+.title {
+  Text-align: center;
+  color: blue;
+  margin: 2%;
+  background-color: rgb(247, 250, 250);
+}
+p {
+  Text-align: center; 
+  margin: 0%;
+}
+.row {
+  background-color: rgb(212, 192, 212); 
+  font-size: 40px;
+  margin:10px 0px 0px 0px;
+}
+.space {
+  margin:0px 0px 0px 30px;
 }
 
-function lastmessage(){
-  const last = document.getElementById('last-message');
-  return last.innerHTML = "ご要望は柳田まで！！ ";
-}  
+.link {
+  margin:0px 0px 0px 10px;
+  font-size: 13px;
+}
+
+.title2 {
+  Text-align: center;
+  color: rgb(0, 76, 255);
+  margin: 0%;
+  background-color: rgb(198, 216, 216);
+  margin:10px 0px 0px 0px;
+}
+
+h2 {
+  background-color: rgb(124, 115, 165);
+  Text-align: center; 
+}
+
+form {
+  font-size: 20px;
+}
+
+.note{
+  font-size: 15px;
+}
+
+button {
+  font-size: 15px;
+  background-color: rgb(212, 220, 237);
+  margin:10px 0px 0px 0px;
+  Text-align: center; 
+}
+#quiz {
+  Text-align: center; 
+}
+
+#score-message{
+  Text-align: center;  
+}
+
+.last {
+  font-size: 15px;
+  background-color: rgb(0, 51, 255);
+  margin:10px 0px 0px 0px;
+  color: rgb(210, 210, 215);
+}
+
+.lastmessage{
+  font-size: 30px;
+  color: rgb(0, 179, 255);
+}
